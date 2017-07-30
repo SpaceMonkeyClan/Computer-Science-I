@@ -1,0 +1,36 @@
+// Star Wars Name Conversion(Extra Credit) - V 1.0.0
+// Author: Dena, Rene
+// Last Modified: 6/18/17
+
+// _____________________Misc_________________________________
+
+#include <iostream>
+
+using namespace std;
+
+// _____________________Strictly Script______________________
+
+int main()
+{
+    cout << "\n\t\t\tWelcome to \"Star Wars Name Converter!\" " << "\n" << endl;
+
+    string firstName = "rene";
+    cout << "Given my first name is: " << firstName << endl;
+    string lastName = "dena";
+    cout << "whilst" << endl << "my last name is: " << lastName << endl;
+    string middleName = "bryan";
+    cout << "whereas" << endl << "my middle name is: " << middleName << "\n" << endl;
+    cout << "......." << "\n" << endl;
+
+    string ptOne = lastName.substr(1, 3); // ena
+    string ptTwo = firstName.substr(1,2); // ene
+    string newFirst = ptOne + ptTwo; // enaene
+
+    string ptThree = middleName.substr(2, 4); //yan
+    string ptFour = lastName.substr(0, 2-1); // d
+    string newLast = ptThree + ptFour; //yand
+
+    cout << "When all is said and done, my Star Wars name is: " << "\""<< newFirst << " of " << newLast << "\"" << endl;
+
+    return 0;
+}
