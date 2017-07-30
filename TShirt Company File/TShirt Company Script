@@ -1,0 +1,908 @@
+# T-Shirt Sales - V.1.0.0
+# Author: Dena, Rene
+# Last Modified: 6/23/17
+
+# _____________________Miscellaneous____________________________
+
+# _____________________Definitions______________________________
+
+def Chart():
+	print('+---------+---------------------------+---------------------------+---------------------------+---------------------------+---------+')
+	print('|         |          12-24            |          25-49            |         50-199            |        200-299            |  300+   |')
+	print('+---------+---------------------------+---------------------------+---------------------------+---------------------------+---------+')
+	print('|    1    |  Youth = $19.68           |  Youth = $9.69            |  Youth = $7.70            |  Youth = $6.70            |  Call   |')
+	print('|  Color  |  Adult[s-xl] = $19.99     |  Adult[s-xl] = $9.99      |  Adult[s-xl] = $8.00      |  Adult[s-xl] = $7.00      |  For    |')
+	print('|  Print  |  Adult[2xl-5xl] = $21.64  |  Adult[2xl-5xl] = $11.64  |  Adult[2xl-5xl] = $9.65   |  Adult[2xl-5xl] = $8.65   |  Quote  |')
+	print('+---------+---------------------------+---------------------------+---------------------------+---------------------------+---------+')
+	print('|    2    |  Youth = $20.69           |  Youth = $11.69           |  Youth = $7.70            |  Youth = $8.70            |  Call   |')
+	print('|  Color  |  Adult[s-xl] = $21.99     |  Adult[s-xl] = $11.99     |  Adult[s-xl] = $10.00     |  Adult[s-xl] = $9.00      |  For    |')
+	print('|  Print  |  Adult[2xl-5xl] = $22.64  |  Adult[2xl-5xl] = $12.64  |  Adult[2xl-5xl] = $11.65  |  Adult[2xl-5xl] = $10.65  |  Quote  |')
+	print('+---------+---------------------------+---------------------------+---------------------------+---------------------------+---------+')
+	print('|    3    |  Youth = $21.61           |  Youth = $12.69           |  Youth = $10.70           |  Youth = $9.70            |  Call   |')
+	print('|  Color  |  Adult[s-xl] = $22.99     |  Adult[s-xl] = $12.99     |  Adult[s-xl] = $11.00     |  Adult[s-xl] = $10.00     |  For    |')
+	print('|  Print  |  Adult[2xl-5xl] = $23.64  |  Adult[2xl-5xl] = $13.64  |  Adult[2xl-5xl] = $12.65  |  Adult[2xl-5xl] = $11.65  |  Quote  |')
+	print('+---------+---------------------------+---------------------------+---------------------------+---------------------------+---------+')
+	print('|    4    |  Youth = $22.69           |  Youth = $13.69           |  Youth = $11.70           |  Youth = $10.70           |  Call   |')
+	print('|  Color  |  Adult[s-xl] = $23.99     |  Adult[s-xl] = $13.99     |  Adult[s-xl] = $12.00     |  Adult[s-xl] = $11.00     |  For    |')
+	print('|  Print  |  Adult[2xl-5xl] = $24.64  |  Adult[2xl-5xl] = $14.64  |  Adult[2xl-5xl] = $13.65  |  Adult[2xl-5xl] = $12.65  |  Quote  |')
+	print('+---------+---------------------------+---------------------------+---------------------------+---------------------------+---------+')
+	print('|    5    |  Youth = $23.69           |  Youth = $14.69           |  Youth = $12.70           |  Youth = $11.70           |  Call   |')
+	print('|  Color  |  Adult[s-xl] = $24.99     |  Adult[s-xl] = $14.99     |  Adult[s-xl] = $13.00     |  Adult[s-xl] = $12.00     |  For    |')
+	print('|  Print  |  Adult[2xl-5xl] = $25.64  |  Adult[2xl-5xl] = $15.64  |  Adult[2xl-5xl] = $14.65  |  Adult[2xl-5xl] = $13.65  |  Quote  |')
+	print('+---------+---------------------------+---------------------------+---------------------------+---------------------------+---------+')
+
+
+def endScript():
+	while True:
+		userChoiceII = input('To end the script, please ENTER "end": ')
+		if userChoiceII == 'end':
+			print('\You\'ve have now selected to end the script. Hope you enjoyed.')
+			print('\nYou will now be kicked from the script shortly.')
+			print('\n\nLOADING...............')
+			print('You have now been kicked from the script. Cheers! :)')
+			print('\n')
+			break
+		else:
+			print('\nPlease only ENTER "end"! >:|')
+
+
+def oCyI():
+	total = buys * 19.66
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with one color print in youth size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+def oCaI():
+	total = buys * 19.99
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with one color print in adult[s-xl] size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+def oCaII():
+	total = buys * 21.64
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with one color print in adult[2xl-5xl] size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+
+
+def tCyI():
+	total = buys * 20.69
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with two color print in youth size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+def tCaI():
+	total = buys * 21.99
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with one color print in adult[s-xl] size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+def tCaII():
+	total = buys * 22.64
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with one color print in adult[2xl-5xl] size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+
+
+def thCyI():
+	total = buys * 21.69
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with two color print in youth size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+def thCaI():
+	total = buys * 22.99
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with one color print in adult[s-xl] size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+def thCaII():
+	total = buys * 23.64
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with one color print in adult[2xl-5xl] size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+
+
+def fCyI():
+	total = buys * 22.69
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with two color print in youth size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+def fCaI():
+	total = buys * 23.99
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with one color print in adult[s-xl] size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+def fCaII():
+	total = buys * 24.64
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with one color print in adult[2xl-5xl] size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+
+
+def fiCyI():
+	total = buys * 23.69
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with two color print in youth size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+def fiCaI():
+	total = buys * 24.99
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with one color print in adult[s-xl] size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+def fiCaII():
+	total = buys * 25.64
+	print('\nLooks like were\'re all done here. :)')
+	print('\nGiven you have chosen to buy {} T-shirts with one color print in adult[2xl-5xl] size, your grand total would be ${:.2f}'.format(buys, total))
+	print('\nHope this helps :)')
+	endScript()
+
+
+def OptionOne():
+	print('\n\nHere, we will get into the specifics.')
+	print('\nThis is were you\'ll be able to choose:')
+	print('A.) Numbers of colors in the print.')
+	print('&nd')
+	print('B.) The size of the T-shirts.')
+	print('\nNow pulling up the chart.....')
+	print('\nLOADING...............')
+	print('\nHere is the chart: \n')
+
+
+	print('+---------------+---------------------------+')
+	print('|               |  T-shirts Sizes w/ Price  |')
+	print('+---------------+---------------------------+')
+	print('|       1       |  Youth = $19.68           |')
+	print('|     Color     |  Adult[s-xl] = $19.99     |')
+	print('|     Print     |  Adult[2xl-5xl] = $21.64  |')
+	print('+---------------+---------------------------+')
+	print('|       2       |  Youth = $20.69           |')
+	print('|     Color     |  Adult[s-xl] = $21.99     |')
+	print('|     Print     |  Adult[2xl-5xl] = $22.64  |')
+	print('+---------------+---------------------------+')
+	print('|       3       |  Youth = $21.61           |')
+	print('|     Color     |  Adult[s-xl] = $22.99     |')
+	print('|     Print     |  Adult[2xl-5xl] = $23.64  |')
+	print('+---------------+---------------------------+')
+	print('|       4       |  Youth = $22.69           |')
+	print('|     Color     |  Adult[s-xl] = $23.99     |')
+	print('|     Print     |  Adult[2xl-5xl] = $24.64  |')
+	print('+---------------+---------------------------+')
+	print('|       5       |  Youth = $23.69           |')
+	print('|     Color     |  Adult[s-xl] = $24.99     |')
+	print('|     Print     |  Adult[2xl-5xl] = $25.64  |')
+	print('+---------------+---------------------------+')
+
+	print('\nWe shall first begin by choosing the number of color print on the T-shirt.')
+	print('\nAs referenced in the chart above^, here are your options:')
+	print('\na.) 1 Color print.')
+	print('b.) 2 Color print.')
+	print('c.) 3 Color print.')
+	print('d.) 4 Color print.')
+	print('e.) 5 Color print.')
+
+	print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+
+	while True:
+		userChoiceI = input('\nPlease ENTER a, b, c, d, or e:')
+		if userChoiceI == 'a':
+			print('\nYou\'ve selected \'1 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $19.68 ')
+			print('b.) Adult[s-xl] - $19.99 ')
+			print('c.) Adult[2xl-5xl] - $21.64 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $19.68\'.')
+					oCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $19.99\'.')
+					oCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $21.64\'.')
+					oCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'b':
+			print('\nYou\'ve selected \'2 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $20.69 ')
+			print('b.) Adult[s-xl] - $21.99 ')
+			print('c.) Adult[2xl-5xl] - $22.64 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $20.69\'.')
+					tCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $21.99\'.')
+					tCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $22.64\'.')
+					tCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'c':
+			print('\nYou\'ve selected \'3 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $21.61 ')
+			print('b.) Adult[s-xl] - $22.99 ')
+			print('c.) Adult[2xl-5xl] - $23.64 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $21.61\'.')
+					thCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $22.99\'.')
+					thCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $23.64\'.')
+					thCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'd':
+			print('\nYou\'ve selected \'4 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $22.69 ')
+			print('b.) Adult[s-xl] - $23.99 ')
+			print('c.) Adult[2xl-5xl] - $24.64 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $22.69\'.')
+					fCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $23.99\'.')
+					fCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $24.64\'.')
+					fCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'e':
+			print('\nYou\'ve selected \'5 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - 23.69 ')
+			print('b.) Adult[s-xl] - $24.99 ')
+			print('c.) Adult[2xl-5xl] - $25.64 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for 23.69\'.')
+					fiCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $24.99\'.')
+					fiCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $25.64\'.')
+					fiCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		else:
+			print('Please only ENTER characters within a-e! >:|')
+
+
+def OptionTwo():
+	print('\n\nHere, we will get into the specifics.')
+	print('\nThis is were you\'ll be able to choose:')
+	print('A.) Numbers of colors in the print.')
+	print('&nd')
+	print('B.) The size of the T-shirts.')
+	print('\nNow pulling up the chart.....')
+	print('\nLOADING...............')
+	print('\nHere is the chart: \n')
+
+
+	print('+---------------+---------------------------+')
+	print('|               |  T-shirts Sizes w/ Price  |')
+	print('+---------------+---------------------------+')
+	print('|       1       |  Youth = $9.69            |')
+	print('|     Color     |  Adult[s-xl] = $9.99      |')
+	print('|     Print     |  Adult[2xl-5xl] = $11.64  |')
+	print('+---------------+---------------------------+')
+	print('|       2       |  Youth = $11.69           |')
+	print('|     Color     |  Adult[s-xl] = $11.99     |')
+	print('|     Print     |  Adult[2xl-5xl] = $12.64  |')
+	print('+---------------+---------------------------+')
+	print('|       3       |  Youth = $12.69           |')
+	print('|     Color     |  Adult[s-xl] = $12.99     |')
+	print('|     Print     |  Adult[2xl-5xl] = $13.64  |')
+	print('+---------------+---------------------------+')
+	print('|       4       |  Youth = $13.69           |')
+	print('|     Color     |  Adult[s-xl] = $13.99     |')
+	print('|     Print     |  Adult[2xl-5xl] = $14.64  |')
+	print('+---------------+---------------------------+')
+	print('|       5       |  Youth = $14.69           |')
+	print('|     Color     |  Adult[s-xl] = $14.99     |')
+	print('|     Print     |  Adult[2xl-5xl] = $15.64  |')
+	print('+---------------+---------------------------+')
+
+	print('\nWe shall first begin by choosing the number of color print on the T-shirt.')
+	print('\nAs referenced in the chart above^, here are your options:')
+	print('\na.) 1 Color print.')
+	print('b.) 2 Color print.')
+	print('c.) 3 Color print.')
+	print('d.) 4 Color print.')
+	print('e.) 5 Color print.')
+
+	print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+
+	while True:
+		userChoiceI = input('\nPlease ENTER a, b, c, d, or e:')
+		if userChoiceI == 'a':
+			print('\nYou\'ve selected \'1 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $9.69 ')
+			print('b.) Adult[s-xl] - $9.99 ')
+			print('c.) Adult[2xl-5xl] - $11.64 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $9.69\'.')
+					oCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $9.99\'.')
+					oCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $11.64\'.')
+					oCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'b':
+			print('\nYou\'ve selected \'2 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $11.69 ')
+			print('b.) Adult[s-xl] - $11.99 ')
+			print('c.) Adult[2xl-5xl] - $12.64 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $11.69\'.')
+					tCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $11.99\'.')
+					tCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $12.64\'.')
+					tCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'c':
+			print('\nYou\'ve selected \'3 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $12.69 ')
+			print('b.) Adult[s-xl] - $12.99 ')
+			print('c.) Adult[2xl-5xl] - $13.64 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $21.69\'.')
+					thCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $12.99\'.')
+					thCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $13.64\'.')
+					thCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'd':
+			print('\nYou\'ve selected \'4 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $13.69 ')
+			print('b.) Adult[s-xl] - $13.99 ')
+			print('c.) Adult[2xl-5xl] - $14.64 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $13.69\'.')
+					fCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $13.99\'.')
+					fCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $14.64\'.')
+					fCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'e':
+			print('\nYou\'ve selected \'5 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $14.69 ')
+			print('b.) Adult[s-xl] - $14.99 ')
+			print('c.) Adult[2xl-5xl] - $15.64 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $14.69\'.')
+					fiCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $14.99\'.')
+					fiCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $15.64\'.')
+					fiCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		else:
+			print('Please only ENTER characters within a-e! >:|')
+
+
+def OptionThree():
+	print('\n\nHere, we will get into the specifics.')
+	print('\nThis is were you\'ll be able to choose:')
+	print('A.) Numbers of colors in the print.')
+	print('&nd')
+	print('B.) The size of the T-shirts.')
+	print('\nNow pulling up the chart.....')
+	print('\nLOADING...............')
+	print('\nHere is the chart: \n')
+
+
+	print('+---------------+---------------------------+')
+	print('|               |  T-shirts Sizes w/ Price  |')
+	print('+---------------+---------------------------+')
+	print('|       1       |  Youth = $7.70            |')
+	print('|     Color     |  Adult[s-xl] = $8.00      |')
+	print('|     Print     |  Adult[2xl-5xl] = $9.65   |')
+	print('+---------------+---------------------------+')
+	print('|       2       |  Youth = $9.70            |')
+	print('|     Color     |  Adult[s-xl] = $10.00     |')
+	print('|     Print     |  Adult[2xl-5xl] = $11.65  |')
+	print('+---------------+---------------------------+')
+	print('|       3       |  Youth = $10.70           |')
+	print('|     Color     |  Adult[s-xl] = $11.00     |')
+	print('|     Print     |  Adult[2xl-5xl] = $12.65  |')
+	print('+---------------+---------------------------+')
+	print('|       4       |  Youth = $11.70           |')
+	print('|     Color     |  Adult[s-xl] = $12.00     |')
+	print('|     Print     |  Adult[2xl-5xl] = $13.65  |')
+	print('+---------------+---------------------------+')
+	print('|       5       |  Youth = $12.70           |')
+	print('|     Color     |  Adult[s-xl] = $13.00     |')
+	print('|     Print     |  Adult[2xl-5xl] = $14.65  |')
+	print('+---------------+---------------------------+')
+
+	print('\nWe shall first begin by choosing the number of color print on the T-shirt.')
+	print('\nAs referenced in the chart above^, here are your options:')
+	print('\na.) 1 Color print.')
+	print('b.) 2 Color print.')
+	print('c.) 3 Color print.')
+	print('d.) 4 Color print.')
+	print('e.) 5 Color print.')
+
+	print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+
+	while True:
+		userChoiceI = input('\nPlease ENTER a, b, c, d, or e:')
+		if userChoiceI == 'a':
+			print('\nYou\'ve selected \'1 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $7.70 ')
+			print('b.) Adult[s-xl] - $8.00 ')
+			print('c.) Adult[2xl-5xl] - $9.65 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $7.70\'.')
+					oCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $8.00 \'.')
+					oCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $9.65\'.')
+					oCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'b':
+			print('\nYou\'ve selected \'2 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $9.70  ')
+			print('b.) Adult[s-xl] - $10.00 ')
+			print('c.) Adult[2xl-5xl] - $11.65 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $9.70 \'.')
+					tCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $10.00\'.')
+					tCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $11.65\'.')
+					tCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'c':
+			print('\nYou\'ve selected \'3 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $10.70 ')
+			print('b.) Adult[s-xl] - $11.00 ')
+			print('c.) Adult[2xl-5xl] - $12.65 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $10.70\'.')
+					thCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $11.00\'.')
+					thCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $12.65\'.')
+					thCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'd':
+			print('\nYou\'ve selected \'4 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $11.70  ')
+			print('b.) Adult[s-xl] - $12.00 ')
+			print('c.) Adult[2xl-5xl] - $13.65 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $11.70 \'.')
+					fCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $12.00\'.')
+					fCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $13.65\'.')
+					fCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'e':
+			print('\nYou\'ve selected \'5 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $12.70 ')
+			print('b.) Adult[s-xl] - $13.00 ')
+			print('c.) Adult[2xl-5xl] - $14.65 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $12.70\'.')
+					fiCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $13.00\'.')
+					fiCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $14.65\'.')
+					fiCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		else:
+			print('Please only ENTER characters within a-e! >:|')
+
+
+def OptionFour():
+	print('\n\nHere, we will get into the specifics.')
+	print('\nThis is were you\'ll be able to choose:')
+	print('A.) Numbers of colors in the print.')
+	print('&nd')
+	print('B.) The size of the T-shirts.')
+	print('\nNow pulling up the chart.....')
+	print('\nLOADING...............')
+	print('\nHere is the chart: \n')
+
+
+	print('+---------------+---------------------------+')
+	print('|               |  T-shirts Sizes w/ Price  |')
+	print('+---------------+---------------------------+')
+	print('|       1       |  Youth = $6.70            |')
+	print('|     Color     |  Adult[s-xl] = $7.00      |')
+	print('|     Print     |  Adult[2xl-5xl] = $8.65   |')
+	print('+---------------+---------------------------+')
+	print('|       2       |  Youth = $8.70            |')
+	print('|     Color     |  Adult[s-xl] = $9.00      |')
+	print('|     Print     |  Adult[2xl-5xl] = $10.65  |')
+	print('+---------------+---------------------------+')
+	print('|       3       |  Youth = $9.70            |')
+	print('|     Color     |  Adult[s-xl] = $10.00     |')
+	print('|     Print     |  Adult[2xl-5xl] = $11.65  |')
+	print('+---------------+---------------------------+')
+	print('|       4       |  Youth = $10.70           |')
+	print('|     Color     |  Adult[s-xl] = $11.00     |')
+	print('|     Print     |  Adult[2xl-5xl] = $12.65  |')
+	print('+---------------+---------------------------+')
+	print('|       5       |  Youth = $11.70           |')
+	print('|     Color     |  Adult[s-xl] = $12.00     |')
+	print('|     Print     |  Adult[2xl-5xl] = $13.65  |')
+	print('+---------------+---------------------------+')
+
+	print('\nWe shall first begin by choosing the number of color print on the T-shirt.')
+	print('\nAs referenced in the chart above^, here are your options:')
+	print('\na.) 1 Color print.')
+	print('b.) 2 Color print.')
+	print('c.) 3 Color print.')
+	print('d.) 4 Color print.')
+	print('e.) 5 Color print.')
+
+	print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+
+	while True:
+		userChoiceI = input('\nPlease ENTER a, b, c, d, or e:')
+		if userChoiceI == 'a':
+			print('\nYou\'ve selected \'1 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $6.70 ')
+			print('b.) Adult[s-xl] - $7.00 ')
+			print('c.) Adult[2xl-5xl] - $8.65 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $6.70\'.')
+					oCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $7.00\'.')
+					oCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $8.65\'.')
+					oCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'b':
+			print('\nYou\'ve selected \'2 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $8.70 ')
+			print('b.) Adult[s-xl] - $9.00  ')
+			print('c.) Adult[2xl-5xl] - $10.65 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $8.70\'.')
+					tCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $9.00 \'.')
+					tCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $10.65\'.')
+					tCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'c':
+			print('\nYou\'ve selected \'3 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $9.70  ')
+			print('b.) Adult[s-xl] - $10.00  ')
+			print('c.) Adult[2xl-5xl] - $11.65 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $9.70 \'.')
+					thCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $10.00 \'.')
+					thCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $11.65\'.')
+					thCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'd':
+			print('\nYou\'ve selected \'4 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $10.70 ')
+			print('b.) Adult[s-xl] - $11.00 ')
+			print('c.) Adult[2xl-5xl] - $12.65 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $10.70\'.')
+					fCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $11.00\'.')
+					fCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $12.65\'.')
+					fCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		elif userChoiceI == 'e':
+			print('\nYou\'ve selected \'5 Color Print\'.')
+			print('\nNext, you shall select the \'size\' of the T-shirts.')
+			print('\nAs referenced in the chart above^, here are your options:')
+			print('\na.) Youth - $11.70 ')
+			print('b.) Adult[s-xl] - $12.00  ')
+			print('c.) Adult[2xl-5xl] - $13.65 ')
+			print('\nPlease ENTER the letter that corresponds with the like of your choosing.')
+			while True:
+				userChoiceI = input('\nPlease ENTER a, b, or c:')
+				if userChoiceI == 'a':
+					print('\You\'ve selected \'Youth for $11.70\'.')
+					fiCyI()
+					break
+				elif userChoiceI == 'b':
+					print('\You\'ve selected \'Adult[s-xl] for $12.00 \'.')
+					fiCaI()
+					break
+				elif userChoiceI == 'c':
+					print('\You\'ve selected \'Adult[2xl-5xl] for $13.65\'.')
+					fiCaII()
+					break
+				else:
+					print('Please only ENTER characters within a-c! >:|')
+			break
+		else:
+			print('Please only ENTER characters within a-e! >:|')
+
+
+# _____________________Strictly Script________________________________
+
+
+print ('\t\t\t\n\nWelcome to the \"T-Shirt Sale\" Conversion Calculator!!!')
+
+while True:
+	name = input('\nBefore we begin, what is your name?: ')
+	if name.isalpha():
+		print('\nAwesome! We can now begin {}.\n\n'.format(name.title()))
+		break
+	else:
+		print('\nCANNOT continue if space was left empty.')
+		print('Also, please be sure to ENTER your name using a-z characters only.')
+
+Chart()
+
+while True:
+	buys = int(input('\nIn starting, please ENTER the amount of T-Shirts you would like to buy: '))
+	if 0 <= buys < 12:
+		print('\nIn order to purchase T-shirts from our store, we require that you purchase in bulk.')
+		print('Any order over 11 T-shirts will satisfy that requirement.')
+		print('Try again.......')
+	elif 12 <= buys <= 24:
+		print('\nYou have selected to buy {} T-shirts.'.format(buys))
+		print('Let\'s begin.')
+		print('\nLOADING...............')
+		OptionOne()
+		break
+	elif 25 <= buys <= 49:
+		print('\nYou have selected to buy {} T-shirts.'.format(buys))
+		print('Let\'s begin.')
+		print('\nLOADING...............')
+		OptionTwo()
+		break
+	elif 50 <= buys <= 199:
+		print('\nYou have selected to buy {} T-shirts.'.format(buys))
+		print('Let\'s begin.')
+		print('\nLOADING...............')
+		OptionThree()
+		break
+	elif 200 <= buys <= 299:
+		print('\nYou have selected to buy {} T-shirts.'.format(buys))
+		print('Let\'s begin.')
+		print('\nLOADING...............')
+		OptionFour()
+		break
+	elif 300 <= buys:
+		print('\nYou have selected to buy {} T-shirts.'.format(buys))
+		print('You\'ve gone overboard. Because of this, your only option is to call for a quote.')
+		print('\nLOADING...............')
+		endScript()
+		break
+	else:
+		print('\nPlease only ENTER adaquite integers! >:|')
+
+
