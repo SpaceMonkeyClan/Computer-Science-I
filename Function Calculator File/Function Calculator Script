@@ -1,0 +1,105 @@
+// <CMATH> Function Calculator
+// Author: Dena, Rene
+// Last Modified: 6/13/17
+
+// Use: pow, sqrt, &nd log
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+
+
+int power(x)
+{
+	cout << "Welcome to the POWER CONSOLE!" << endl; cout << endl;
+	cout << "The operation will now be compleated." << endl;
+	cout << "Progress - 27\n";
+	cout << "Progress - 42\n";
+	cout << "Progress - 65\n";
+	cout << "Progress - 84\n";
+	cout << "Progress - 99\n";
+	cout << "Compleate!";
+	cout << endl;
+	cout << "The power of " << x << " is: " << pow(x, ) << endl;
+}
+
+int squareRoot(x)
+{
+	cout << "Welcome to the SQUARE ROOT CONSOLE!" << endl; cout << endl;
+	cout << "The operation will now be compleated." << endl;
+	cout << "Progress - 27\n";
+	cout << "Progress - 42\n";
+	cout << "Progress - 65\n";
+	cout << "Progress - 84\n";
+	cout << "Progress - 99\n";
+	cout << "Compleate!";
+	cout << endl;
+	cout << "The square root of " << x << " is: " << sqrt(x) << endl;
+}
+
+int logarithm(x)
+{
+	cout << "Welcome to the LOG CONSOLE!" << endl; cout << endl;
+	cout << "The operation will now be compleated." << endl;
+	cout << "Progress - 27\n";
+	cout << "Progress - 42\n";
+	cout << "Progress - 65\n";
+	cout << "Progress - 84\n";
+	cout << "Progress - 99\n";
+	cout << "Compleate!";
+	cout << endl;
+	cout << "The log of " << x << " is: " << log(x) << endl;
+}
+
+
+void console()
+{
+	cout << "\t\t\tWelcome to the MAIN CONSOLE!" << endl; cout << endl;
+	cout << "What would you like do?: " << endl;
+	cout << "A.) SQUARE ROOT " << X; cout endl;
+	cout << "B.) LOG of " << x << "\nOR"; cout << endl; 
+	cout << "C.) POWER of " << X << " of a number \'n.\'" << endl;
+	string userChoice;
+	cout << "Please ENTER a, b, or c depending on what operation you\'d like to perform: ";
+	cin >> userChoice; cout << endl;
+	if (userChoice == 'a')
+	{
+		cout << "You\'ve selected to use to POWER operator." << endl;
+		count << "Let\'s head to the POWER CONSOLE now!" << endl;
+		cout << "LOADING..............."
+		power(x)
+	}
+	else if (userChoice == 'b')
+	{
+		cout << "You\'ve selected to use to SQUARE ROOT operator." << endl;
+		count << "Let\'s head to the POWER CONSOLE now!" << endl;
+		cout << "LOADING..............."
+		squareRoot(x)
+
+	}
+	else if (userChoice == 'c')
+	{
+		cout << "You\'ve selected to use to POWER operator." << endl;
+		count << "Let\'s head to the POWER CONSOLE now!" << endl;
+		cout << "LOADING..............."
+		logarithm(x)
+	}
+	
+}
+
+
+int main()
+{
+	cout << "Welcome to \"Function Calculator!\"" << endl; cout << endl;
+	int x;
+	cout << "Please ENTER your number:" << endl; cout <<  endl;
+	cin >>  x; 
+	cout << "Awesome! You\'ve selected: " << x; cout << endl;
+	cout << "We may now begin!" << endl;
+	cout << "Heading to the MAIN CONSILE now." << endl;
+	cout << "LOADING..............." << endl;
+	console();
+	
+	return 0;
+}
